@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Inspire</title>
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css"
+		integrity="sha384-O8whS3fhG2OnA5Kas0Y9l3cfpmYjapjI0E4theH4iuMD+pLhbf6JI0jIMfYcK3yZ" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+		integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+	<link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body id="bg-image">
+	<div class="container-fluid">
+		<span id="bg-image"></span>
+		<div class="row" id="weather-row">
+			<div class="col-xs-10 col-md-12">
+				<div class="clock" style="border-radius:10px" id="source"></div>
+			</div>
+
+			<div class="col-xs-2 col-md-12">
+				<div id="weather">>Your Weather Template
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="row justify-content-center" id="clock-row">
+		<div class="col-xs-12 text-center">
+			<div class="d-flex" id="clock">
+				My Clock
+			</div>
+		</div>
+	</div>
+
+	<div class="row" style="justify-content: space-between !important;" id="joke-todo-row">
+		<div>
+			<div id="todo-error"></div>
+			<div id="ToDos" class="todo-elem p-3 fixed-bottom">
+				<div class="m-2">
+					<span>To Dos: <p id="todo-count"></p></span>
+				<form onsubmit="app.todoController.addTodo(event)">
+					<input type="text" name="taskTodo"> <button type="submit" class="btn btn-info">Add</button>
+				</form>
+				<div class="scroll" id="todos"></div>
+				</div>
+			</div>		
+		</div>
+		<div class="col-xs-12 col-md-4" id="space-holder"></div>
+		<footer class="container-fluid">
+			<div class="col-12 col-md-10 col-lg-10 mx-auto">
+				<div class="text-center text-white p-2" id="joke">
+					Chuck Norris Joke of the Day
+				</div>
+			</div>
+			<div class="row justify-content-center quote-row">
+				<div id="quote" class="col-3 quote-shape p-4 col-12 col-md-10 col-lg-10 mx-auto">The Quote </div>
+				</div>
+		</footer>
+	</div>
+	</div>
+
+	<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+		integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+		crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+		integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+		crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+		integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+		crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.18.0/axios.js"></script>
+	<script type="module" src="app/main.js"></script>
+</body>
+
+</html>
+<html>

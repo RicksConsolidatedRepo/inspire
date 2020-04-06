@@ -1,0 +1,65 @@
+#todo-error{
+  color: red;
+  font-size: 2em;
+}
+
+bg-image{
+  background:no-repeat center fixed;
+  background-size:cover;
+}
+
+#weather{
+  background-color:rgb(0,0,0,.5);
+  border-radius:20px;
+  color:white;
+  margin:auto;
+  margin-bottom:2vh;
+}
+
+#clock{
+  background-color:rgb(0,0,0,.5);
+  border-radius:20px;
+  color:white;
+  margin-bottom:2vh;
+}
+
+#quote{
+  background-color:rgb(0,0,0,.5);
+  border-radius:20px;
+  color:white;
+  margin-bottom:2vh;
+}
+
+#ToDos{
+  background-color:rgb(0,0,0,.5);
+  border-radius:20px;
+  color:white;
+  margin-bottom:2vh;
+}
+
+.todo-elem{
+  position: absolute;
+  width: 20rem;
+  margin-left: 16rem;
+  margin-right: auto;
+  margin-top: -14rem;
+}
+.todo-elem span{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.one-todo{
+  display: flex;
+  flex-direction: row;
+}
+.remove-todo{
+  padding-left: 1.25px;
+  padding-right: 1.25px;
+  padding-top: 0.25px;
+  padding-bottom: 0.25px;
+  margin-left: 0.25rem;
+}
+.bottom-row{
+  margin-top: 10rem;
+}
